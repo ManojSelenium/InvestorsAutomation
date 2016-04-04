@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="126732" started-at="2016-03-11T07:36:16Z" finished-at="2016-03-11T07:38:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="126732" started-at="2016-03-11T07:36:16Z" finished-at="2016-03-11T07:38:22Z">
+      <class name="com.investors.testcases.RecentIssuesTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:com.investors.testcases.RecentIssuesTest@5cc47ee4]" name="launchBrowser" is-config="true" duration-ms="9" started-at="2016-03-11T13:06:16Z" finished-at="2016-03-11T13:06:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:com.investors.testcases.RecentIssuesTest@5cc47ee4]" name="setup" is-config="true" duration-ms="18354" started-at="2016-03-11T13:06:16Z" finished-at="2016-03-11T13:06:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="verifyRecentIssues_tc()[pri:0, instance:com.investors.testcases.RecentIssuesTest@5cc47ee4]" name="verifyRecentIssues_tc" duration-ms="108357" started-at="2016-03-11T13:06:34Z" finished-at="2016-03-11T13:08:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRecentIssues_tc -->
+      </class> <!-- com.investors.testcases.RecentIssuesTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

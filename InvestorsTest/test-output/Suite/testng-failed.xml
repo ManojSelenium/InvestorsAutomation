@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="sBrowser" value="chrome"/>
+  <test name="ChromeTest">
+    <parameter name="sBrowser" value="chrome"/>
+    <classes>
+      <class name="com.investors.testcases.MarketTrandTest"/>
+      <class name="com.investors.testcases.ResearchTest"/>
+      <class name="com.investors.testcases.LeaderBoardTest"/>
+      <class name="com.investors.testcases.StockListTest"/>
+    </classes>
+  </test> <!-- ChromeTest -->
+  <test name="ChromeTest(failed)">
+    <parameter name="sBrowser" value="chrome"/>
+    <classes>
+      <class name="com.investors.testcases.StockListTest">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="selectleader_tc"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.investors.testcases.StockListTest -->
+      <class name="com.investors.testcases.ResearchTest">
+        <methods>
+          <include name="setup"/>
+          <include name="quitBrowser"/>
+          <include name="ibdStockCheckUp_tc"/>
+        </methods>
+      </class> <!-- com.investors.testcases.ResearchTest -->
+      <class name="com.investors.testcases.MarketTrandTest">
+        <methods>
+          <include name="setup"/>
+          <include name="verifyBigPictureLink_tc"/>
+        </methods>
+      </class> <!-- com.investors.testcases.MarketTrandTest -->
+      <class name="com.investors.testcases.LeaderBoardTest">
+        <methods>
+          <include name="setup"/>
+          <include name="closebrowser"/>
+          <include name="verifyleaderboardURL_tc"/>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- com.investors.testcases.LeaderBoardTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

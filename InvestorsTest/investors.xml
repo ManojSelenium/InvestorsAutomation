@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="false">
+<!--   <test name="FirefoxTest">
+  <parameter name="sBrowser" value="firefox" />
+    <classes>
+      <class name="com.investors.testcases.LoginTest"/>
+       <class name="com.investors.testcases.MarketTrandTest"/>
+      <class name="com.investors.testcases.ResearchTest"/>
+    </classes>
+  </test>  -->
+  
+ <test name="ChromeTest">
+  <parameter name="sBrowser" value="chrome" />
+    <classes>
+      <!-- <class name="com.investors.testcases.LoginTest"/> -->
+        <class name="com.investors.testcases.MarketTrandTest"/> 
+      <class name="com.investors.testcases.ResearchTest"/> 
+      <class name="com.investors.testcases.LeaderBoardTest"/> 
+      <class name="com.investors.testcases.StockListTest"/> 
+    </classes>
+  </test> 
+  
+  <!--   <test name="HeadLessBrowser">
+  <parameter name="sBrowser" value="html" />
+    <classes>
+      <class name="com.investors.testcases.LoginTest"/>
+      <class name="com.investors.testcases.MarketTrandTest"/>
+    </classes>
+  </test>  -->
+  
+</suite> <!-- Suite -->
